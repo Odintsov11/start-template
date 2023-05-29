@@ -1,22 +1,9 @@
-@import "fonts";
+@import 'main/colors';
+@import 'main/resolutions';
 
-body{
-    font-family: TTDrugs;
-    background: url('@img/1.png') 0 0 no-repeat;
-    span{
-        color: red
-    }
-}
+@import "main/reset";
 
-@media (max-width:768px) {
-span{
-    font-size: 20px;
-}
-}
+@import 'main/media';
 
-
-@media (max-width:768px) {
-    body{
-       background-color: green;
-    }
-    }
+@import 'main/fonts';
+@import 'main/mixins'

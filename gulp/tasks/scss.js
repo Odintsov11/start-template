@@ -18,6 +18,7 @@ export const scss = () => {
     })))
     .pipe(app.plugins.replace(/@img\//g, '../img/'))
     .pipe(sass({
+        // includePaths: require("node-normalize-scss").includePaths,
         outputStyle: 'expanded'
     }))
     .pipe(
